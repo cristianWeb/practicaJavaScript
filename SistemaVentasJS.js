@@ -31,6 +31,43 @@ class Producto {
     }
 }
 
+class Orden {
+    static contsdorOrdenes = 0;
+
+    static get MAX_PRODUCTOS() {
+        return 5;
+    }
+
+    constructor() {
+        this._idOrden = ++Orden.contsdorOrdenes;
+        this._productos = [];
+        this._contadorProductosAgregados = 0;
+    }
+
+    get idOrden() {
+        return this._idOrden;
+    }
+
+    agregarProducto(producto) {
+        if (this._productos.length < Orden.MAX_PRODUCTOS) {
+            this._productos.push(producto);
+        } else {
+            console.log(' No  se puede agregar mas productos..');
+        }
+    }
+
+    calcularTotal() {
+        let tolalVenta = 0;
+
+        for (let producto of this._productos) {
+            tolalVenta += producto.precio; //
+            //totalVenta = totalVenta + producto.precio
+        }
+
+        return tolalVenta;
+    }
+}
+
 let producto1 = new Producto("Pantalon", 200);
 let producto2 = new Producto("camisa", 100);
 console.log(producto1.toString());
