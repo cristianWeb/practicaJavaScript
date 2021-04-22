@@ -66,9 +66,23 @@ class Orden {
 
         return tolalVenta;
     }
+
+    mostrarOrden() {
+
+        let productosOrden = ' ';
+        for (let producto of this._productos) {
+            productosOrden += '\n' + producto.toString() + ' ';
+        }
+
+        console.log(`Orden: ${this._idOrden} Total: $ ${this.calcularTotal()}, Productos: ${productosOrden}`);
+    }
 }
 
 let producto1 = new Producto("Pantalon", 200);
 let producto2 = new Producto("camisa", 100);
-console.log(producto1.toString());
-console.log(producto2.toString());
+
+let orden1 = new Orden();
+orden1.agregarProducto(producto1);
+orden1.agregarProducto(producto2);
+
+orden1.mostrarOrden();
