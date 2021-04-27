@@ -13,7 +13,7 @@ const saludar = () => {
     return 'como la ves';
 }
 
-const regObjeto = () => ({ nombre: 'David', apellido: 'lose' });
+const regObjeto = () => ({ nombre: 'David', apellido: 'nose' });
 
 console.log(saludar());
 miFuncionFlecha();
