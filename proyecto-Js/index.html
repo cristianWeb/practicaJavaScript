@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Proyecto</title>
+
+    <!-- link de estilos css-->
+
+    <link id="theme" rel="stylesheet" href="css/green.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--slider-->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+    <section id="global">
+        <!--Cabecera-->
+        <header>
+            <div id="logo">
+                <h1>
+                    Boceto js
+                </h1>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Slider-->
+        <div id="slider">
+            <div class="galeria">
+                <div><img src="./img/hojas.jpg" title="hojas" /></div>
+                <div><img src="./img/rojo.jpg" title="rojo" /></div>
+                <div><img src="./img/cielo.jpg" title="cielo" /></div>
+            </div>
+        </div>
+
+        <!--Contenido-->
+
+        <section id="conten">
+            <div id="posts">
+                <!--
+          <article class="post">
+            <h2>Titulo articulo</h2>
+            <span class="date">
+              Fecha de publicacion
+            </span>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              repellendus ipsa tempora omnis corrupti laboriosam ullam
+              cupiditate ut quis, commodi aspernatur animi. Assumenda,
+              voluptatum recusandae repellat tempore saepe quibusdam laborum.
+            </p>
+            <a href="#" class="buttom-more"> Leer mas</a>
+          </article>
+          -->
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4>
+                        <span> ¿Quienes somos? </span>
+                    </h4>
+                    <img src="./img/caracol.jpg" alt="" />
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam nihil quia suscipit! Molestias sed ullam repellendus mollitia, inventore voluptas? Nam quia ad, fuga ut quaerat sapiente debitis dolore repellat fugit.
+                    </p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+
+                    <form action="">
+                        <label for="name">
+                           Nombre
+                        </label>
+                        <input type="text" name="name" id="formName" />
+
+                        <label for="email">
+                           Correo
+                        </label>
+                        <input type="text" name="email" />
+
+                        <label for="password">
+                           Contraseña
+                        </label>
+                        <input type="password" name="password" />
+
+                        <input type="submit" value="Entrar" />
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+    </section>
+    <footer>
+        Cristian Valencia &COPY;
+        <a href="index.html" class="subir"> Volver arriba</a>
+    </footer>
+</body>
+
+</html>
