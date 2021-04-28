@@ -25,7 +25,7 @@ function agregarPersona() {
         personas.push(persona);
         mostrarPersonas();
     } else {
-        console.log('No hay informacion')
+        alert('Agrega un nombre');
     }
 
 }
